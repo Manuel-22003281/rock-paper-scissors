@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-title
+{
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', cursive;
+    padding: 36px;
+}
+
+.main
+{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.main-title
+{
+    font-size: 32px;
+}
+
+.main-text
+{
+    font-size: 20px;
+}
+
+.score-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+}
+
+.sign
+{
+    font-size: 84px;
+    font-weight: bold;
+}
+
+.options
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul
+{
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.button
+{
+    border: 6px solid black;
+    border-radius: 14px;
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+}
+
+.sign
+{
+    width: 144px;
+    height: 124px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li
+{
+    list-style-type: none;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.button:hover
+{
+    background-color: rgb(205, 204, 204);
+    cursor: pointer;
+}
+
+.modal
+{
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+.modal.active
+{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-restart
+{
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    padding: 8px 16px;
+    background-color: transparent;
+}
+
+.btn-restart:hover
+{
+    cursor: pointer;
+}
+
+.overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.overlay.active
+{
+    display: block;
+}
